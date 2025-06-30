@@ -14,6 +14,8 @@ import PopularScreen from './src/screens/PopularScreen';
 import TrendingScreen from './src/screens/TrendingScreen';
 
 
+
+
 const Drawer = createDrawerNavigator();
 const BottomTab = createBottomTabNavigator();
 const TopTab = createMaterialTopTabNavigator();
