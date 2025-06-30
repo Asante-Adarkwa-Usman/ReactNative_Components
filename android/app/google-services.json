@@ -2,7 +2,7 @@
   "project_info": {
     "project_number": "372997872778",
     "project_id": "rn-pipeline-setup",
-    "storage_bucket": "rn-pipeline-setup.firebasestorage.app"
+    "storage_bucket": "rn-pipeline-setup.appspot.com"
   },
   "client": [
     {
