@@ -1,4 +1,5 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+## React Native Tab Navigators
+This project is a simple React Native Tab Navigator implementations. It showcases how you can use the TopTab, BottomTab and the Drawer
 
 # Getting Started
 
