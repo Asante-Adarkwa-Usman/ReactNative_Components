@@ -1,6 +1,6 @@
 {
   "name": "AnotherApp",
-  "version": "3.3.0",
+  "version": "3.3.2",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@react-native-community/netinfo": "^11.4.1",
-    "@react-native-firebase/analytics": "^22.2.1",
-    "@react-native-firebase/app": "^22.2.1",
     "@react-navigation/bottom-tabs": "^7.3.13",
     "@react-navigation/drawer": "^7.3.12",
     "@react-navigation/material-top-tabs": "^7.2.13",
