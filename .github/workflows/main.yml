@@ -45,8 +45,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      - name: Decode service account key
-        run: echo "${{ secrets.GOOGLE_SERVICES_JSON }}" | base64 --decode > android/app/google-services.json
+      # - name: Decode service account key
+      #   run: echo "${{ secrets.GOOGLE_SERVICES_JSON }}" | base64 --decode > android/app/google-services.json
 
       - name: Decode keystore
         run: |
@@ -105,11 +105,11 @@ jobs:
           path: android/app/build/outputs/apk/release/app-release.apk
           retention-days: 5
 
-      - name: Upload to Firebase App Distribution
-        uses: wzieba/Firebase-Distribution-Github-Action@v1
-        with:
-          appId: ${{ secrets.FIREBASE_APP_ID_ANDROID }}
-          token: ${{ secrets.FIREBASE_CLI_TOKEN }}
-          testers: ${{ secrets.FIREBASE_TESTERS }}
-          file: android/app/build/outputs/apk/release/app-release.apk
-          releaseNotes: "New build from GitHub Actions"
+      # - name: Upload to Firebase App Distribution
+      #   uses: wzieba/Firebase-Distribution-Github-Action@v1
+      #   with:
+      #     appId: ${{ secrets.FIREBASE_APP_ID_ANDROID }}
+      #     token: ${{ secrets.FIREBASE_CLI_TOKEN }}
+      #     testers: ${{ secrets.FIREBASE_TESTERS }}
+      #     file: android/app/build/outputs/apk/release/app-release.apk
+      #     releaseNotes: "New build from GitHub Actions"
